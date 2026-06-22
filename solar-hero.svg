@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-label="Solar photovoltaic panels on a modern roof under bright sky">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dff5ff"/>
+      <stop offset="0.42" stop-color="#8ed3f0"/>
+      <stop offset="1" stop-color="#eef9ff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#203c72"/>
+      <stop offset="0.48" stop-color="#0b1731"/>
+      <stop offset="1" stop-color="#020611"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="0.48" stop-color="#78d8ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8793a5"/>
+      <stop offset="1" stop-color="#3e4859"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#071326" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1100" fill="url(#sky)"/>
+  <circle cx="1450" cy="190" r="122" fill="#fff4b6" opacity="0.88"/>
+  <circle cx="1450" cy="190" r="210" fill="#ffffff" opacity="0.22"/>
+  <path d="M0 540 C240 485 470 520 700 470 C940 420 1180 438 1430 380 C1585 344 1710 330 1800 320 L1800 1100 L0 1100 Z" fill="#cfe1eb" opacity="0.62"/>
+  <path d="M0 612 C260 548 480 594 720 540 C970 484 1160 520 1410 462 C1590 420 1720 412 1800 392 L1800 1100 L0 1100 Z" fill="#9eb5c2" opacity="0.34"/>
+  <g opacity="0.7">
+    <rect x="1080" y="405" width="84" height="172" fill="#dfe7ee"/>
+    <rect x="1188" y="360" width="132" height="216" fill="#edf2f5"/>
+    <rect x="1352" y="438" width="92" height="138" fill="#d8e2e9"/>
+    <rect x="1474" y="390" width="178" height="186" fill="#edf3f7"/>
+    <rect x="1120" y="440" width="18" height="42" fill="#9eb1bf"/>
+    <rect x="1228" y="400" width="28" height="52" fill="#a9bbc8"/>
+    <rect x="1282" y="400" width="28" height="52" fill="#a9bbc8"/>
+    <rect x="1518" y="428" width="30" height="58" fill="#a9bbc8"/>
+    <rect x="1576" y="428" width="30" height="58" fill="#a9bbc8"/>
+  </g>
+  <path d="M-120 792 L1155 590 L1920 910 L1920 1100 L-120 1100 Z" fill="url(#roof)"/>
+  <g filter="url(#softShadow)">
+    <g transform="translate(605 498) skewY(-10) rotate(7)">
+      <rect x="0" y="0" width="1020" height="410" rx="20" fill="#101827"/>
+      <g transform="translate(24 24)">
+        <rect width="972" height="362" rx="12" fill="url(#panel)"/>
+        <rect width="972" height="362" rx="12" fill="url(#glass)"/>
+        <g stroke="#74a8ef" stroke-opacity="0.5" stroke-width="2">
+          <path d="M162 0 V362"/>
+          <path d="M324 0 V362"/>
+          <path d="M486 0 V362"/>
+          <path d="M648 0 V362"/>
+          <path d="M810 0 V362"/>
+          <path d="M0 72 H972"/>
+          <path d="M0 144 H972"/>
+          <path d="M0 216 H972"/>
+          <path d="M0 288 H972"/>
+        </g>
+        <g fill="#ffffff" opacity="0.11">
+          <path d="M18 26 H320 L258 90 H18 Z"/>
+          <path d="M548 14 H900 L842 74 H548 Z"/>
+          <path d="M210 210 H462 L416 258 H210 Z"/>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(260 640) skewY(-11) rotate(7)">
+      <rect x="0" y="0" width="720" height="292" rx="18" fill="#101827"/>
+      <g transform="translate(20 20)">
+        <rect width="680" height="252" rx="10" fill="url(#panel)"/>
+        <rect width="680" height="252" rx="10" fill="url(#glass)"/>
+        <g stroke="#74a8ef" stroke-opacity="0.48" stroke-width="2">
+          <path d="M136 0 V252"/>
+          <path d="M272 0 V252"/>
+          <path d="M408 0 V252"/>
+          <path d="M544 0 V252"/>
+          <path d="M0 63 H680"/>
+          <path d="M0 126 H680"/>
+          <path d="M0 189 H680"/>
+        </g>
+        <path d="M24 28 H255 L210 75 H24 Z" fill="#fff" opacity="0.12"/>
+      </g>
+    </g>
+  </g>
+  <path d="M0 910 C280 850 465 1010 760 938 C1015 876 1240 912 1488 860 C1640 828 1752 840 1800 854 L1800 1100 L0 1100 Z" fill="#081321" opacity="0.32"/>
+</svg>
