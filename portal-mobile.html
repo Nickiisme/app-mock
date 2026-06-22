@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>SunPower Partner Portal</title>
+    <link rel="stylesheet" href="./portal-mobile.css?v=20260622-app" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="#home" aria-label="SunPower home">
+        <strong>TCL</strong><span></span><b>SUNPOWER</b>
+      </a>
+      <div class="header-actions">
+        <button class="icon-button language-button" type="button" aria-label="Change language">
+          <span aria-hidden="true">EN</span>
+        </button>
+        <button class="icon-button message-button" type="button" aria-label="Open messages">
+          <span class="mail-icon" aria-hidden="true"></span>
+          <small class="notification-dot">1</small>
+        </button>
+        <button class="avatar-button" type="button" aria-label="Open profile" aria-expanded="false">
+          <span aria-hidden="true">XS</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="drawer-backdrop" hidden></div>
+    <aside class="profile-drawer" aria-hidden="true" aria-label="Profile menu">
+      <div class="drawer-head">
+        <div class="profile-summary">
+          <span class="profile-avatar">XS</span>
+          <div><strong>Xin296 sukee</strong><small>SunPower Partner</small></div>
+        </div>
+        <button class="drawer-close" type="button" aria-label="Close profile menu">×</button>
+      </div>
+      <nav>
+        <a href="#messages"><span>Messages</span><b>1</b></a>
+        <a href="#profile">Profile</a>
+        <a href="#users">User management</a>
+        <a href="#password">Change password</a>
+        <a href="#confirm">Confirm information</a>
+      </nav>
+      <button class="logout-button" type="button">Log out</button>
+    </aside>
+
+    <main id="portal-main">
+      <div class="page-view active" data-page="home">
+      <section class="partner-callout" aria-labelledby="partner-title">
+        <div>
+          <span class="section-kicker">PARTNER PROGRAM</span>
+          <h1 id="partner-title">Become a SunPower partner</h1>
+          <p>Grow your solar business with trusted products, training and support.</p>
+        </div>
+        <a href="#apply">Apply now <span aria-hidden="true">›</span></a>
+      </section>
+
+      <section class="content-section messages-section" id="messages">
+        <div class="section-heading">
+          <div><h2>Messages</h2><span class="count-badge">1</span></div>
+          <button class="text-button mark-read" type="button">Mark as read</button>
+        </div>
+        <button class="message-row" type="button">
+          <span class="message-status" aria-hidden="true"></span>
+          <span><strong>Your partner application is ready</strong><small>Complete your company information to continue.</small></span>
+          <time datetime="2026-06-22">Today</time>
+        </button>
+      </section>
+
+      <section class="content-section news-section" id="news">
+        <div class="section-heading">
+          <h2>Latest news</h2>
+          <a href="#all-news">View all <span aria-hidden="true">›</span></a>
+        </div>
+        <article class="news-card">
+          <img src="./assets/solar-hero.svg" alt="SunPower solar panels installed on a rooftop" />
+          <div class="news-copy">
+            <div><span class="news-tag">Latest news</span><time datetime="2026-06-12">12 Jun 2026</time></div>
+            <h3>Your new course is now live</h3>
+            <p>Unlock practical product knowledge and stand out in the solar market.</p>
+            <a href="#news-detail" aria-label="Read Your new course is now live">Read article <span>›</span></a>
+          </div>
+        </article>
+        <div class="carousel-controls" aria-label="News carousel">
+          <div class="carousel-dots"><i class="active"></i><i></i><i></i><i></i></div>
+          <div><button class="carousel-prev" type="button" aria-label="Previous news">←</button><button class="carousel-next" type="button" aria-label="Next news">→</button></div>
+        </div>
+      </section>
+
+      <section class="content-section events-section" id="events">
+        <div class="section-heading">
+          <h2>Upcoming events</h2>
+          <a href="#calendar">View calendar <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="event-list">
+          <article>
+            <time datetime="2026-06-25"><b>25</b><span>JUN</span></time>
+            <div><span class="event-type">Online webinar</span><h3>Shingle Shade Management</h3><p>More energy production on real roofs</p><small>10:00 – 11:00 CET</small></div>
+            <button type="button" aria-label="Open event">›</button>
+          </article>
+          <article>
+            <time datetime="2026-07-03"><b>03</b><span>JUL</span></time>
+            <div><span class="event-type">Product training</span><h3>SunPower Performance 7</h3><p>Installation essentials for partners</p><small>14:00 – 15:30 CET</small></div>
+            <button type="button" aria-label="Open event">›</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section benefits-section" id="benefits">
+        <div class="section-heading">
+          <h2>Partner benefits</h2>
+          <a href="#all-benefits">View all <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="benefit-visual" aria-hidden="true">
+          <span>TOOLS</span><span>TRAINING</span><span>SUPPORT</span>
+        </div>
+        <h3>Everything you need to grow</h3>
+        <p>Access ready-to-use marketing tools, expert training and dedicated support for your business.</p>
+        <a class="outline-button" href="#benefit-detail">Explore benefits</a>
+      </section>
+      </div>
+
+      <section class="page-view inner-page" data-page="lead" aria-labelledby="lead-title">
+        <header class="page-title-bar">
+          <div><span class="section-kicker">SALES PIPELINE</span><h1 id="lead-title">Leads</h1></div>
+          <a class="round-action" href="#lead-create" aria-label="Add new lead">+</a>
+        </header>
+        <div class="summary-strip">
+          <article><strong>12</strong><span>Open</span></article>
+          <article><strong>4</strong><span>Qualified</span></article>
+          <article><strong>2</strong><span>Won</span></article>
+        </div>
+        <label class="search-field"><span aria-hidden="true"></span><input type="search" placeholder="Search leads" /></label>
+        <div class="segmented-control" role="tablist" aria-label="Lead status">
+          <button class="active" type="button" role="tab">All</button><button type="button" role="tab">New</button><button type="button" role="tab">In progress</button>
+        </div>
+        <div class="record-list">
+          <a class="record-card" href="#lead-detail"><span class="record-avatar">NH</span><div><strong>Nordhaus GmbH</strong><small>Residential · 12.6 kWp</small><span>Updated today</span></div><b class="status-pill new">New</b></a>
+          <a class="record-card" href="#lead-detail"><span class="record-avatar">SE</span><div><strong>Solar Estate BV</strong><small>Commercial · 84.2 kWp</small><span>Updated yesterday</span></div><b class="status-pill progress">In progress</b></a>
+          <a class="record-card" href="#lead-detail"><span class="record-avatar">GH</span><div><strong>Green Home Project</strong><small>Residential · 9.8 kWp</small><span>Updated 18 Jun</span></div><b class="status-pill qualified">Qualified</b></a>
+        </div>
+      </section>
+
+      <section class="page-view inner-page" data-page="marketing" aria-labelledby="marketing-title">
+        <header class="page-title-bar"><div><span class="section-kicker">RESOURCE CENTER</span><h1 id="marketing-title">Marketing</h1></div></header>
+        <label class="search-field"><span aria-hidden="true"></span><input type="search" placeholder="Search marketing assets" /></label>
+        <div class="featured-resource">
+          <img src="./assets/solar-hero.svg" alt="SunPower rooftop solar marketing campaign" />
+          <div><span>FEATURED KIT</span><h2>Summer solar campaign</h2><p>Social posts, banners and sales materials ready to customize.</p><a href="#asset-detail">Open toolkit ›</a></div>
+        </div>
+        <div class="resource-grid">
+          <a href="#asset-detail"><i class="resource-photo"></i><strong>Brand assets</strong><small>Logos and guidelines</small></a>
+          <a href="#asset-detail"><i class="resource-doc"></i><strong>Brochures</strong><small>Product materials</small></a>
+          <a href="#asset-detail"><i class="resource-social"></i><strong>Social media</strong><small>Ready-to-post content</small></a>
+          <a href="#asset-detail"><i class="resource-video"></i><strong>Videos</strong><small>Product and training</small></a>
+        </div>
+        <div class="list-heading"><h2>Recently added</h2><a href="#asset-detail">View all ›</a></div>
+        <div class="asset-list">
+          <a href="#asset-detail"><span>PDF</span><div><strong>Performance 7 sales brochure</strong><small>PDF · 8.4 MB · 18 Jun 2026</small></div><b>↓</b></a>
+          <a href="#asset-detail"><span>ZIP</span><div><strong>Residential social media kit</strong><small>ZIP · 24 MB · 12 Jun 2026</small></div><b>↓</b></a>
+        </div>
+      </section>
+
+      <section class="page-view inner-page" data-page="academy" aria-labelledby="academy-title">
+        <header class="page-title-bar"><div><span class="section-kicker">LEARNING CENTER</span><h1 id="academy-title">Academy</h1></div></header>
+        <section class="learning-progress"><div><span>YOUR PROGRESS</span><strong>3 of 7 courses completed</strong></div><b>43%</b><i><span></span></i></section>
+        <div class="segmented-control" role="tablist" aria-label="Course category">
+          <button class="active" type="button" role="tab">For you</button><button type="button" role="tab">Courses</button><button type="button" role="tab">Certificates</button>
+        </div>
+        <div class="course-list">
+          <a href="#course-detail"><div class="course-cover course-blue"><span>PRODUCT</span><b>P7</b></div><div><span class="course-label">Continue learning</span><h2>SunPower Performance 7</h2><p>Product benefits and installation essentials</p><i><span style="width:65%"></span></i><small>65% complete</small></div></a>
+          <a href="#course-detail"><div class="course-cover course-green"><span>SALES</span><b>101</b></div><div><span class="course-label">Recommended</span><h2>Consultative solar selling</h2><p>Turn customer needs into the right solution</p><small>45 min · 6 lessons</small></div></a>
+          <a href="#course-detail"><div class="course-cover course-dark"><span>TECHNICAL</span><b>BC</b></div><div><span class="course-label">New</span><h2>Back Contact technology</h2><p>Efficiency, reliability and system design</p><small>35 min · 5 lessons</small></div></a>
+        </div>
+      </section>
+
+      <section class="page-view inner-page" data-page="more" aria-labelledby="more-title">
+        <header class="page-title-bar"><div><span class="section-kicker">PORTAL</span><h1 id="more-title">More</h1></div></header>
+        <a class="account-panel" href="#profile" aria-label="Open account profile">
+          <span class="profile-avatar">XS</span>
+          <div><strong>Xin296 sukee</strong><small>Authorized Partner · View account</small></div>
+          <b aria-hidden="true">›</b>
+        </a>
+        <a class="membership-panel" href="#membership" aria-label="View Authorized membership details">
+          <div class="membership-heading">
+            <span><small>MEMBERSHIP LEVEL</small><strong>Authorized</strong></span>
+            <b>AUTHORIZED</b>
+          </div>
+          <div class="tier-track" aria-label="Membership progression: Entry, Authorized, Premier, Elite">
+            <span class="completed"><i></i><small>Entry</small></span>
+            <span class="active"><i></i><small>Authorized</small></span>
+            <span><i></i><small>Premier</small></span>
+            <span><i></i><small>Elite</small></span>
+          </div>
+          <p>Complete partner goals to reach Premier <span aria-hidden="true">›</span></p>
+        </a>
+        <div class="menu-group">
+          <h2>Business tools</h2>
+          <a href="#warranty"><i>W</i><span><strong>Warranty</strong><small>Register and track warranties</small></span><b>›</b></a>
+          <a href="#monitoring"><i>M</i><span><strong>Monitoring</strong><small>View system performance</small></span><b>›</b></a>
+        </div>
+        <div class="menu-group">
+          <h2>Account</h2>
+          <a href="#language"><i>L</i><span><strong>Language</strong><small class="current-language">English</small></span><b>›</b></a>
+          <a href="#users"><i>U</i><span><strong>User management</strong><small>Manage team access</small></span><b>›</b></a>
+          <a href="#password"><i>P</i><span><strong>Change password</strong><small>Update account password</small></span><b>›</b></a>
+        </div>
+        <button class="full-logout" type="button">Log out</button>
+        <p class="app-version">SunPower Partner Portal · Version 1.0</p>
+      </section>
+
+      <section class="page-view inner-page detail-page" data-page="messages">
+        <header class="detail-header"><a href="#home" aria-label="Back to home">←</a><h1>Messages</h1><button type="button">Read all</button></header>
+        <div class="inbox-list">
+          <article class="unread"><i></i><div><span>PARTNER PROGRAM</span><h2>Your partner application is ready</h2><p>Complete your company information to continue your SunPower partner application.</p><time>Today, 09:24</time></div></article>
+          <article><i></i><div><span>ACADEMY</span><h2>A new course is available</h2><p>SunPower Performance 7 product training is now live.</p><time>12 Jun 2026</time></div></article>
+        </div>
+      </section>
+
+      <section class="page-view inner-page detail-page" data-page="calendar">
+        <header class="detail-header"><a href="#more" aria-label="Back to more">←</a><h1>Event calendar</h1><span></span></header>
+        <div class="month-picker"><button type="button">‹</button><strong>June 2026</strong><button type="button">›</button></div>
+        <div class="mini-calendar"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span><i></i><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b><b>10</b><b>11</b><b>12</b><b>13</b><b>14</b><b>15</b><b>16</b><b>17</b><b>18</b><b>19</b><b>20</b><b>21</b><b class="today">22</b><b>23</b><b>24</b><b class="has-event">25</b><b class="has-event">26</b><b>27</b><b>28</b><b>29</b><b>30</b></div>
+        <div class="list-heading"><h2>Events this month</h2></div>
+        <div class="event-list"><article><time><b>25</b><span>JUN</span></time><div><span class="event-type">Online webinar</span><h3>Shingle Shade Management</h3><p>10:00 – 11:00 CET</p></div><button>›</button></article></div>
+      </section>
+
+      <section class="page-view inner-page tool-page" data-page="warranty" aria-labelledby="warranty-title">
+        <header class="detail-header"><a href="#more" aria-label="Back to more">←</a><h1 id="warranty-title">Warranty</h1><a class="header-text-action" href="#warranty-help">Help</a></header>
+        <section class="tool-hero warranty-hero">
+          <span>WARRANTY CENTER</span><h2>Protect every installation</h2><p>Register products and follow warranty claims from one place.</p>
+          <a href="#warranty-register">Register product</a>
+        </section>
+        <div class="summary-strip tool-summary"><article><strong>28</strong><span>Registered</span></article><article><strong>2</strong><span>In review</span></article><article><strong>1</strong><span>Action needed</span></article></div>
+        <div class="segmented-control" role="tablist" aria-label="Warranty views"><button class="active" role="tab">Products</button><button role="tab">Claims</button><button role="tab">Documents</button></div>
+        <label class="search-field"><span aria-hidden="true"></span><input type="search" placeholder="Serial number or customer" /></label>
+        <div class="list-heading"><h2>Recent registrations</h2><a href="#warranty-all">View all ›</a></div>
+        <div class="tool-records">
+          <a href="#warranty-detail"><i class="panel-thumb"></i><div><strong>SunPower Performance 7</strong><small>SP7-460-COM · Nordhaus GmbH</small><span>Registered 18 Jun 2026</span></div><b class="record-state success">Active</b></a>
+          <a href="#warranty-detail"><i class="panel-thumb"></i><div><strong>SunPower Performance 7</strong><small>SP7-455-BLK · Green Home</small><span>Submitted 20 Jun 2026</span></div><b class="record-state pending">In review</b></a>
+        </div>
+      </section>
+
+      <section class="page-view inner-page tool-page" data-page="monitoring" aria-labelledby="monitoring-title">
+        <header class="detail-header"><a href="#more" aria-label="Back to more">←</a><h1 id="monitoring-title">Monitoring</h1><a class="header-text-action" href="#monitoring-map">Map</a></header>
+        <section class="energy-overview">
+          <div><span>TODAY'S PRODUCTION</span><strong>186.4 <small>kWh</small></strong><p><b>+12.8%</b> compared with yesterday</p></div>
+          <div class="energy-chart" aria-label="Hourly production chart"><i style="height:18%"></i><i style="height:36%"></i><i style="height:68%"></i><i style="height:92%"></i><i style="height:74%"></i><i style="height:48%"></i><i style="height:24%"></i></div>
+        </section>
+        <div class="summary-strip tool-summary"><article><strong>14</strong><span>Systems</span></article><article><strong>12</strong><span>Online</span></article><article><strong class="alert-number">2</strong><span>Attention</span></article></div>
+        <div class="list-heading"><h2>Systems</h2><a href="#monitoring-all">View all ›</a></div>
+        <div class="tool-records system-records">
+          <a href="#monitoring-detail"><span class="system-status online"></span><div><strong>Nordhaus Residential</strong><small>Berlin · 12.6 kWp</small><span>Today 42.8 kWh</span></div><b>›</b></a>
+          <a href="#monitoring-detail"><span class="system-status online"></span><div><strong>Solar Estate Warehouse</strong><small>Rotterdam · 84.2 kWp</small><span>Today 121.6 kWh</span></div><b>›</b></a>
+          <a href="#monitoring-detail"><span class="system-status warning"></span><div><strong>Green Home Project</strong><small>Munich · 9.8 kWp</small><span>Communication alert</span></div><b>›</b></a>
+        </div>
+      </section>
+
+      <section class="page-view inner-page detail-page language-page" data-page="language" aria-labelledby="language-title">
+        <header class="detail-header"><a href="#more" aria-label="Back to more">←</a><h1 id="language-title">Language</h1><span></span></header>
+        <p class="page-intro">Choose the language used throughout the Partner Portal.</p>
+        <div class="language-list" role="radiogroup" aria-label="Portal language">
+          <button class="active" type="button" role="radio" aria-checked="true" data-code="EN" data-name="English"><span><b>EN</b><strong>English</strong></span><i></i></button>
+          <button type="button" role="radio" aria-checked="false" data-code="DE" data-name="Deutsch"><span><b>DE</b><strong>Deutsch</strong></span><i></i></button>
+          <button type="button" role="radio" aria-checked="false" data-code="ES" data-name="Español"><span><b>ES</b><strong>Español</strong></span><i></i></button>
+          <button type="button" role="radio" aria-checked="false" data-code="FR" data-name="Français"><span><b>FR</b><strong>Français</strong></span><i></i></button>
+          <button type="button" role="radio" aria-checked="false" data-code="IT" data-name="Italiano"><span><b>IT</b><strong>Italiano</strong></span><i></i></button>
+          <button type="button" role="radio" aria-checked="false" data-code="PT" data-name="Português"><span><b>PT</b><strong>Português</strong></span><i></i></button>
+        </div>
+      </section>
+
+      <section class="page-view inner-page detail-page generic-detail" data-page="generic">
+        <header class="detail-header"><a href="#home" aria-label="Go back">←</a><h1 class="generic-title">Details</h1><span></span></header>
+        <div class="generic-visual"><span>TCL | SUNPOWER</span></div>
+        <span class="section-kicker">PARTNER PORTAL</span>
+        <h2 class="generic-heading">SunPower partner resource</h2>
+        <p>This prototype page represents the selected Portal function. Product content and backend data can be connected during implementation.</p>
+        <button class="primary-action" type="button">Continue</button>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a class="active" href="#home"><i class="nav-home" aria-hidden="true"></i><span>Home</span></a>
+      <a href="#lead"><i class="nav-lead" aria-hidden="true"></i><span>Lead</span></a>
+      <a href="#marketing"><i class="nav-grid" aria-hidden="true"></i><span>Marketing</span></a>
+      <a href="#academy"><i class="nav-academy" aria-hidden="true"></i><span>Academy</span></a>
+      <a href="#more"><i class="nav-more" aria-hidden="true"></i><span>More</span></a>
+    </nav>
+
+    <script src="./portal-mobile.js"></script>
+  </body>
+</html>
