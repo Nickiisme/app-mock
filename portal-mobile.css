@@ -218,3 +218,28 @@ main { max-width: 760px; margin: 0 auto; }
   html { scroll-behavior: auto; }
   .profile-drawer, .drawer-backdrop { transition: none; }
 }
+
+
+html {
+  background: #f3f4f6;
+}
+
+body {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* 防止内容撑破手机宽度 */
+* {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
